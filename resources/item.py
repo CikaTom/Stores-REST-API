@@ -63,4 +63,4 @@ class ItemList(Resource):
     def get(self):
         # for comprehension: [item.json() for item in ItemModel.query.all()]}
         # lambda list(map(lambda x: x.json(), ItemModel.query.all())) - use this if pprogram is developer in other languages
-        return {'items': [item.json() for item in ItemModel.query.all()]}
+        return {'items': [item.json() for item in ItemModel.find_all()]}

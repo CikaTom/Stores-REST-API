@@ -8,6 +8,10 @@ Deployed on Heroku.
 
 ```
 pip install Flask
+pip install Flask-JWT
+pip install Flask-RESTFUL
+pip install Flask-SQLAlchemy
+
 python app.py
 ```
 
